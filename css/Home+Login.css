@@ -85,7 +85,7 @@ html,body {
   position: relative;
   margin-left: 8.6%;
   top:0;
-  font-size :90%;
+  font-size :280%;
   font-weight: bold;
   font-family: sofia-pro, yu-gothic,  sans-serif;
 }
@@ -93,7 +93,7 @@ html,body {
   position: relative;
   margin-left: 8.6%;
   margin-right: 8.6%;
-  font-size :70%;
+  font-size :200%;
   font-family: yu-gothic, sofia-pro, sans-serif;
   text-align: justify;
 }
