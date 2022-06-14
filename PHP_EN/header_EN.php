@@ -16,7 +16,7 @@
       <!-- Add your navigations here -->
       <div class="wrapper">
         <ul>
-          <li><a href="Home+Login_EN.php">Home</a></li>
+          <li><a href="Home_EN.php">Home</a></li>
           <li><a href="Team_EN.php">Team</a></li>
           <li><a href="Contact_EN.php">Contact</a></li>
       
@@ -32,7 +32,7 @@
       <div class ="greenLine"></div>
       
       <div class="compagnyLogo">
-        <a href="Home+Login_EN.php"><img src="../images/LogoHyp.svg" alt="Logo Compagny" style="width:280%;height:280%;"> </a>
+        <a href="Home_EN.php"><img src="../images/LogoHyp.svg" alt="Logo Compagny" style="width:280%;height:280%;"> </a>
       </div>
 
       

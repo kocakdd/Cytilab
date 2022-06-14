@@ -33,7 +33,7 @@
       <!-- Add your navigations here -->
       <div class="wrapper">
         <ul>
-          <li><a href="Home+Login.php">Home</a></li>
+          <li><a href="Home.php">Home</a></li>
           <li><a href="Team.php">Team</a></li>
           <li><a href="Contact.php">Contact</a></li>
 
@@ -49,7 +49,7 @@
       <div class ="greenLine"></div>
       
       <div class="compagnyLogo">
-        <a href="Home+Login.php"><img src="images/LogoHyp.svg" alt="Logo Compagny" style="width:280%;height:280%;"> </a>
+        <a href="Home.php"><img src="images/LogoHyp.svg" alt="Logo Compagny" style="width:280%;height:280%;"> </a>
       </div>
 
       
