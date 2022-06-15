@@ -1,0 +1,16 @@
+
+Options +FollowSymlinks
+
+# activation module
+RewriteEngine On
+
+# conditions to rewrite the url
+RewriteRule ^Home$ Home.php [L]
+RewriteRule ^Team$ Team.php [L]
+RewriteRule ^Contact$ Contact.php [L]
+RewriteRule ^Home$ Home.php [L]
+
+RewriteRule ^EN/Home$ EN/Home.php [L]
+RewriteRule ^EN/Team$ EN/Team.php [L]
+RewriteRule ^EN/Contact$ EN/Contact.php [L]
+RewriteRule ^EN/Home$ EN/Home.php [L]

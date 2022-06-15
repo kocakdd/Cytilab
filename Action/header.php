@@ -33,12 +33,12 @@
       <!-- Add your navigations here -->
       <div class="wrapper">
         <ul>
-          <li><a href="Home.php">Home</a></li>
-          <li><a href="Team.php">Team</a></li>
-          <li><a href="Contact.php">Contact</a></li>
+          <li><a href="Home">Home</a></li>
+          <li><a href="Team">Team</a></li>
+          <li><a href="Contact">Contact</a></li>
 
           <!-- Check if this still work when it will be online -->
-          <li><a href="#">NL |</a>  <a href="<?php echo "PHP_EN/".rtrim( basename($_SERVER['PHP_SELF']), ".php")."_EN.php" ; ?>" class="english" > EN </a> 
+          <li><a href="#">NL |</a>  <a href="<?php echo "EN/".rtrim( basename($_SERVER['PHP_SELF']), '.php') ; ?>" class="english" > EN </a> 
           </li>
               
               
@@ -49,7 +49,7 @@
       <div class ="greenLine"></div>
       
       <div class="compagnyLogo">
-        <a href="Home.php"><img src="images/LogoHyp.svg" alt="Logo Compagny" style="width:280%;height:280%;"> </a>
+        <a href="Home"><img src="images/LogoHyp.svg" alt="Logo Compagny" style="width:280%;height:280%;"> </a>
       </div>
 
       
