@@ -8,6 +8,7 @@
 	<META	NAME="geography"	CONTENT="Rotterdam,	South-Holland,	Nertheland">	
 	<META	NAME="keywords"	CONTENT="Rotterdam, Home">	
 	<META	NAME="subject"	CONTENT="Home">	
+  <META http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
   <!-- CSS link -->
   <link rel="stylesheet" href="../css/Home+Login.css">
@@ -32,7 +33,7 @@
   </div>
   <div class="first-text-block">
     
-    <h2 class="title1"> How do you get financially fit ?<body></body></h2>
+    <h2 class="title1"> How do you get financially fit ?</h2>
     <h3 class="title2"> How Hypotheekvitaal can help you </h3>
     <p class="text1"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit </p>
 

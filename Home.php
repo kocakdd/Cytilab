@@ -34,7 +34,7 @@
   </div>
   <div class="first-text-block">
     
-    <h2 class="title1"> Hoe wordt u financieel fit ?<body></body></h2>
+    <h2 class="title1"> Hoe wordt u financieel fit ?</h2>
     <h3 class="title2"> Hoe Hypotheekvitaal u kan helpen </h3>
     <p class="text1"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit </p>
 
