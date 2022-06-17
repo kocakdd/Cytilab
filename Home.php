@@ -1,10 +1,17 @@
+<?php 
+
+if (stristr($_SERVER['HTTP_USER_AGENT'], "iPhone")  
+|| strpos($_SERVER['HTTP_USER_AGENT'], "iPod") 
+|| strpos($_SERVER['HTTP_USER_AGENT'], "Android") ) 
+{ ?>
+
 <!DOCTYPE html>
 <html lang="NL">
 
 <head>	
-  
-	<title> Hypotheekvitaak - Home </title>	
-	<META	NAME="author"	CONTENT="NAPIERALA Lisa">	
+	<base href="/"/>
+	<title> Hypotheekvitaal - Home </title>	
+	<META	NAME="author"	CONTENT="KOCAK Derya">	
 	<META	NAME="description"	CONTENT="Home">	
 	<META	NAME="geography"	CONTENT="Rotterdam,	South-Holland,	Nertheland">	
 	<META	NAME="keywords"	CONTENT="Rotterdam, Home">	
@@ -19,9 +26,12 @@
 	
 
    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+  <link rel="icon" href="images/LogoHyp.svg">
 </head>	
 
 <body>
+
     <!--Header-->    
   
   <?php include_once('Action/header.php'); ?>
@@ -34,7 +44,7 @@
   </div>
   <div class="first-text-block">
     
-    <h2 class="title1"> Hoe wordt u financieel fit ?</h2>
+    <h2 class="title1"> Hoe wordt u financieel fit ?<body></body></h2>
     <h3 class="title2"> Hoe Hypotheekvitaal u kan helpen </h3>
     <p class="text1"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit </p>
 
@@ -66,13 +76,13 @@
     
   <!-- The three blocks -->
   <div class="Hypotheekready">
-    <img src="images/Frontier.png" alt="Graphic" style="width:60%;height:70%">
+    <img src="images/frontier.png" alt="Graphic" style="width:60%;height:70%">
     <h2> Hypotheekready </h2>
     <p> Zekerheid over uw keuze </p>
   </div>
 
     <div class="Hypotheekadvies">
-    <img src="images/honesty.png" alt="Graphic" style="width:60%;height:70%">
+    <img src="images/Honesty.png" alt="Graphic" style="width:60%;height:70%">
     <h2> Hypotheekadvies </h2>
     <p> Advies voor uw hypotheek </p>
   </div>
@@ -174,4 +184,24 @@
 
 </body>
 </html>
-  
+
+<?php	
+}
+else {?>	
+<div class = "wait">
+	<img src="images/LogoHyp.svg" alt="Logo Compagny">
+	<h1> Hypotheekvitaal </h1>
+	<p> We will arrive soon ! </p>
+	<p> In the meantime you can connect on your phone </p>
+</div>
+<style>
+	.wait{
+		position: relative;
+		width : 100%;
+		text-align : center;
+		top : 70px;
+	}
+	.wait img{ width : 10%;}
+	h1{ color: #009353;}
+</style>
+<?php } ?>

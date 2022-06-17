@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://use.typekit.net/hmw2slg.css">
   <link rel="stylesheet" href="https://fontsgeek.com/yu-gothic-font">
   
+  
   <div id="loader" class="loader"></div>
   <script>
   document.onreadystatechange = function() 
@@ -38,7 +39,7 @@
           <li><a href="Contact">Contact</a></li>
 
           <!-- Check if this still work when it will be online -->
-          <li><a href="#">NL |</a>  <a href="<?php echo "EN/".rtrim( basename($_SERVER['PHP_SELF']), '.php') ; ?>" class="english" > EN </a> 
+          <li><a href="#">NL |</a>  <a href="<?php echo "EN/".rtrim( basename($_SERVER['PHP_SELF']), ".php") ; ?>" class="english" > EN </a> 
           </li>
               
               
@@ -53,4 +54,5 @@
       </div>
 
       
+</nav>
 </nav>

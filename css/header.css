@@ -1,213 +1,213 @@
- #navbar{
-    position:fixed;
-    background-color: white;
-    top:0;
-    width:100%;
-    height:150px;
-    z-index:1000;
-    font-family: sofia-pro;
- }
+#navbar{
+  position:fixed;
+  background-color: white;
+  top:0;
+  width:100%;
+  height:150px;
+  z-index:1000;
+  font-family: sofia-pro;
+}
 
 
 /***********/
 /* Toggle */
 /***********/
- .wrapper{
-   position: fixed;
-   white-space: nowrap;
-   top: 0;
-   right: -100%;
-   height: 150px;
-   width: 100%;
-   background: white;
-   transition: all 0.5s ease-in-out;
-   z-index :1;
-   display : inline-block;
- }
- #active:checked ~ .wrapper{
-   right:0;
- }
- .menu-btn{
-   position: absolute;
-   z-index: 2;
-   right: 50px; /* position of the bar menu*/
-   top: 0px; /* position of the bar menu*/
-   height: 150px;
-   width: 150px;
-   text-align: center;
-   cursor: pointer;
-   transition: all 0.3s ease-in-out;
- }
- .menu-btn span,
- .menu-btn:before,
- .menu-btn:after{
-   content: "";
-   position: absolute;
-   top: calc(50% - 1px);
-   left: 30%;
-   width: 60%; /*width of the tree bar */
-   line-height: 150%;
-   border-bottom: 7px solid #009353; /*the density of the bar menu*/
-   transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
- }
- .menu-btn:before{
-   transform: translateY(-25px); /*to change the distance between upper bar and the middle one*/
- }
- .menu-btn:after{
-   transform: translateY(25px); /*to change the distance between lower bar and the middle one*/
- }
- 
- .close {
-   z-index: 1;
-   width: 100%;
-   height: 100%;
-   pointer-events: none;
-   transition: background .6s;
- }
- 
- /* closing animation */
- #active:checked + .menu-btn span {
-   transform: scaleX(0);
- }
- #active:checked + .menu-btn:before {
-   transform: rotate(45deg);
-   border-color: #009353;
- }
- #active:checked + .menu-btn:after {
-   transform: rotate(-45deg);
-   border-color: #009353;
- }
- .wrapper ul{
-   position: absolute;
-   top: 50%;
-   left: 25%;
-   height: 100%;
-   width : 120%;
-   transform: translate(-50%, -50%);
-   list-style: none;
-   text-align: right;
-   font-weight: bold; }
-
- .wrapper ul li{
-  position : relative;
-   height: 10%;
-   top : 50%;
-   display : inline-block;
-   margin-right : 10%;
-   margin-left : 5%;
- }
-
- .wrapper ul li a{
-   text-decoration: none;
-   font-size: 40px;
-   font-weight: 500px;
-   color: #009353;
-   position: absolute;
-   line-height: 12px;
-   opacity: 0;
-   transition: all 0.3s ease;
-   transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
-   
- }
- .wrapper ul li a:after{
-   position: absolute;
-   background: #fff;
-   width: 100%;
-   height: 100%;
-   left: 0;
-   top: 0;
-   border-radius: 50px;
-   transform: scaleY(0);
-   z-index: -1;
-   transition: transform 0.3s ease;
-
- }
- .wrapper ul li a:hover:after{
-   transform: scaleY(1);
- }
- .wrapper ul li a:hover{
-   color: #F8FFF9;/*color after the clic*/
- }
- input[type="checkbox"]{
-   display: none;
- }
- 
- 
- #active:checked ~ .wrapper ul li a{
-   opacity: 1;
- }
- .wrapper ul li a{
-   transition: opacity 0.7s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-   transform: translateX(100px);
- }
- #active:checked ~ .wrapper ul li a{
-   transform: none;
-   transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1); /* easeOutBackを緩めた感じ */
-    transition-delay: .6s;
-   transform: translateX(-100px);
- }
- 
-.english{
-  position : relative;
-  left : 90px;
+.wrapper{
+ position: fixed;
+ white-space: nowrap;
+ top: 0;
+ right: -100%;
+ height: 150px;
+ width: 100%;
+ background: white;
+ transition: all 0.5s ease-in-out;
+ z-index :1;
+ display : inline-block;
 }
+#active:checked ~ .wrapper{
+ right:0;
+}
+.menu-btn{
+ position: absolute;
+ z-index: 2;
+ right: 50px; /* position of the bar menu*/
+ top: 0px; /* position of the bar menu*/
+ height: 150px;
+ width: 150px;
+ text-align: center;
+ cursor: pointer;
+ transition: all 0.3s ease-in-out;
+}
+.menu-btn span,
+.menu-btn:before,
+.menu-btn:after{
+ content: "";
+ position: absolute;
+ top: calc(50% - 1px);
+ left: 30%;
+ width: 60%; /*width of the tree bar */
+ line-height: 150%;
+ border-bottom: 7px solid #009353; /*the density of the bar menu*/
+ transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.menu-btn:before{
+ transform: translateY(-25px); /*to change the distance between upper bar and the middle one*/
+}
+.menu-btn:after{
+ transform: translateY(25px); /*to change the distance between lower bar and the middle one*/
+}
+
+.close {
+ z-index: 1;
+ width: 100%;
+ height: 100%;
+ pointer-events: none;
+ transition: background .6s;
+}
+
+/* closing animation */
+#active:checked + .menu-btn span {
+ transform: scaleX(0);
+}
+#active:checked + .menu-btn:before {
+ transform: rotate(45deg);
+ border-color: #009353;
+}
+#active:checked + .menu-btn:after {
+ transform: rotate(-45deg);
+ border-color: #009353;
+}
+.wrapper ul{
+ position: absolute;
+ top: 50%;
+ left: 25%;
+ height: 100%;
+ width : 120%;
+ transform: translate(-50%, -50%);
+ list-style: none;
+ text-align: right;
+ font-weight: bold; }
+
+.wrapper ul li{
+position : relative;
+ height: 10%;
+ top : 50%;
+ display : inline-block;
+ margin-right : 10%;
+ margin-left : 5%;
+}
+
+.wrapper ul li a{
+ text-decoration: none;
+ font-size: 40px;
+ font-weight: 500px;
+ color: #009353;
+ position: absolute;
+ line-height: 12px;
+ opacity: 0;
+ transition: all 0.3s ease;
+ transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
  
- /* My Green Line for the Nav*/
- .greenLine
- {
-   width: 100%; /*lenght of the line*/
-   height: 1px;
-   top : 150px;
-   position: absolute;
-   background: #009353;
-   box-shadow: 0px 2px 3px black;
- }
- 
- 
- /* Logo of the Compagny*/
- .compagnyLogo{
- 
-   position : absolute;
-   top : 20px;
-   left: 70px;
- }
+}
+.wrapper ul li a:after{
+ position: absolute;
+ background: #fff;
+ width: 100%;
+ height: 100%;
+ left: 0;
+ top: 0;
+ border-radius: 50px;
+ transform: scaleY(0);
+ z-index: -1;
+ transition: transform 0.3s ease;
+
+}
+.wrapper ul li a:hover:after{
+ transform: scaleY(1);
+}
+.wrapper ul li a:hover{
+ color: #F8FFF9;/*color after the clic*/
+}
+input[type="checkbox"]{
+ display: none;
+}
 
 
- /* LOADER */
+#active:checked ~ .wrapper ul li a{
+ opacity: 1;
+}
+.wrapper ul li a{
+ transition: opacity 0.7s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+ transform: translateX(100px);
+}
+#active:checked ~ .wrapper ul li a{
+ transform: none;
+ transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1); /* easeOutBackを緩めた感じ */
+  transition-delay: .6s;
+ transform: translateX(-100px);
+}
+
+.english{
+position : relative;
+left : 90px;
+}
+
+/* My Green Line for the Nav*/
+.greenLine
+{
+ width: 100%; /*lenght of the line*/
+ height: 1px;
+ top : 150px;
+ position: absolute;
+ background: #009353;
+ box-shadow: 0px 2px 3px black;
+}
+
+
+/* Logo of the Compagny*/
+.compagnyLogo{
+
+ position : absolute;
+ top : 20px;
+ left: 70px;
+}
+
+
+/* LOADER */
 
 .loader{
-  position : absolute;
-  top : 50%;
-  left : 45%;
-  --r1 : 154%;
-  --r2 : 68.5%;
-  width : 150px;
-  height : 150px;
-  border-radius: 50%;
-  background:
-      radial-gradient(var(--r1) var(--r2) at top, white 79.5%, #009353 80%),
-      radial-gradient(var(--r1) var(--r2) at bottom, #009353 79.5%, white 80%),
-      radial-gradient(var(--r1) var(--r2) at top, white 79.5%, #009353 80%),
-      #ccc;
-  background-size: 50.5% 220%;
-  background-position: -100% 0%, 0% 0%, 100% 0%;
-  background-repeat: no-repeat;
-  animation : progress 2s infinite linear;
+position : absolute;
+top : 50%;
+left : 45%;
+--r1 : 154%;
+--r2 : 68.5%;
+width : 150px;
+height : 150px;
+border-radius: 50%;
+background:
+    radial-gradient(var(--r1) var(--r2) at top, white 79.5%, #009353 80%),
+    radial-gradient(var(--r1) var(--r2) at bottom, #009353 79.5%, white 80%),
+    radial-gradient(var(--r1) var(--r2) at top, white 79.5%, #009353 80%),
+    #ccc;
+background-size: 50.5% 220%;
+background-position: -100% 0%, 0% 0%, 100% 0%;
+background-repeat: no-repeat;
+animation : progress 2s infinite linear;
 
 
 }
 
 
 @keyframes progress{
-  33%{
-    background-position: 0% 33%, 100% 33%, 200% 33%
-  }
-  66%{
-    background-position: -100% 66%, 0% 66%, 100% 66%
-  }
-  100%{
-    background-position: 0% 100%, 100% 100%, 200% 100%
-  }
+33%{
+  background-position: 0% 33%, 100% 33%, 200% 33%
+}
+66%{
+  background-position: -100% 66%, 0% 66%, 100% 66%
+}
+100%{
+  background-position: 0% 100%, 100% 100%, 200% 100%
+}
 }
 
 

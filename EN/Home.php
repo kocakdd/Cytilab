@@ -1,3 +1,12 @@
+<?php 
+
+if (stristr($_SERVER['HTTP_USER_AGENT'], "iPhone")  
+|| strpos($_SERVER['HTTP_USER_AGENT'], "iPod") 
+|| strpos($_SERVER['HTTP_USER_AGENT'], "Android") ) 
+{ ?>
+
+
+
 <!DOCTYPE html>
 <html lang="EN">
 
@@ -8,7 +17,6 @@
 	<META	NAME="geography"	CONTENT="Rotterdam,	South-Holland,	Nertheland">	
 	<META	NAME="keywords"	CONTENT="Rotterdam, Home">	
 	<META	NAME="subject"	CONTENT="Home">	
-  <META http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
   <!-- CSS link -->
   <link rel="stylesheet" href="../css/Home+Login.css">
@@ -19,6 +27,8 @@
 
    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>	
+
+   <link rel="icon" href="../images/LogoHyp.svg">
 
 <body>
     <!--Header-->    
@@ -33,7 +43,7 @@
   </div>
   <div class="first-text-block">
     
-    <h2 class="title1"> How do you get financially fit ?</h2>
+    <h2 class="title1"> How do you get financially fit ?<body></body></h2>
     <h3 class="title2"> How Hypotheekvitaal can help you </h3>
     <p class="text1"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit </p>
 
@@ -170,4 +180,24 @@
 
 </body>
 </html>
-  
+
+<?php	
+}
+else {?>	
+<div class = "wait">
+	<img src="../images/LogoHyp.svg" alt="Logo Compagny">
+	<h1> Hypotheekvitaal </h1>
+	<p> We will arrive soon ! </p>
+	<p> In the meantime you can connect on your phone </p>
+</div>
+<style>
+	.wait{
+		position: relative;
+		width : 100%;
+		text-align : center;
+		top : 70px;
+	}
+	.wait img{ width : 10%;}
+	h1{ color: #009353;}
+</style>
+<?php } ?>

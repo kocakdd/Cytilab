@@ -1,6 +1,3 @@
-
-Options +FollowSymlinks
-
 # activation module
 RewriteEngine On
 
@@ -14,3 +11,7 @@ RewriteRule ^EN/Home$ EN/Home.php [L]
 RewriteRule ^EN/Team$ EN/Team.php [L]
 RewriteRule ^EN/Contact$ EN/Contact.php [L]
 RewriteRule ^EN/Home$ EN/Home.php [L]
+
+# to have the https
+RewriteCond %{HTTPS} !=on
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
