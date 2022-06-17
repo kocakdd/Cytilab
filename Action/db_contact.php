@@ -13,7 +13,7 @@ if (
     {
         // Connection at MySQL
         // My database is data_contact
-        $mydb = new PDO('mysql:host=91.184.19.136;dbname=p539032_data_contact;charset=utf8', 'p539032_contact', 'Contact_hypotheek123'); 
+        $mydb = new PDO('mysql:host=91.184.19.136;dbname=p539032_data_contact;charset=utf8', '***', '***'); 
         [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
     }
     catch(Exception $e)
